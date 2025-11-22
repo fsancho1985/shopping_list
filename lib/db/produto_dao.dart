@@ -14,7 +14,7 @@ class ProdutoDao {
   Future<Produto?> getProdutoPorNome(String nome) async {
     final result = await db.query(
       'produto',
-      where: 'nomeproduto = ?',
+      where: 'nome_produto = ?',
       whereArgs: [nome],
     );
     return result.isNotEmpty ? Produto.fromMap(result.first) : null;

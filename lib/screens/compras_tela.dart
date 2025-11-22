@@ -303,7 +303,7 @@ class _ComprasTelaState extends State<ComprasTela> {
                         });
                       },
                     ),
-                    title: Text(p.nomeProduto),
+                    title: Text(p.nome_Produto),
                     subtitle: Text('Unidade: ${p.unidade}'),
                     trailing: SizedBox(
                       width: 80,
