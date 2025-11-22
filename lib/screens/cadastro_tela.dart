@@ -1,5 +1,6 @@
 
 
+import 'package:app_shopping_list/components/login_components/login_footer.dart';
 import 'package:app_shopping_list/services/apiservices.dart';
 import 'package:app_shopping_list/services/database_service.dart';
 import 'package:flutter/cupertino.dart';
@@ -150,8 +151,8 @@ class CadastroTela extends StatefulWidget {
               onBuscarEndereco: () { buscarEndereco(); },
               onCadastrar: () { cadastrarUsuario(); },
             ),
-            // const SizedBox(height: 40),
-            // const CadastroFooter(),
+            const SizedBox(height: 40),
+            LoginFooter(),
           ],
         ),
       )
