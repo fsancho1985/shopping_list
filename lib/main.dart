@@ -1,5 +1,6 @@
 import 'package:app_shopping_list/screens/abre_tela.dart';
 import 'package:app_shopping_list/screens/cadastro_tela.dart';
+import 'package:app_shopping_list/screens/home_tela.dart';
 import 'package:app_shopping_list/screens/login_tela.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,7 @@ class MainApp extends StatelessWidget {
         '/abre' : (context) => const AbreTela(),
         '/cadastro' : (context) => const CadastroTela(),
         '/login' : (context) => const LoginTela(),
+        '/home' : (context) => const HomeTela()
       }
     );
   }
