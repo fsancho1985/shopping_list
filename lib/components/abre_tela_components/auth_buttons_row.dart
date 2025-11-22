@@ -1,4 +1,4 @@
-import 'package:app_shopping_list/components/auth_button.dart';
+import 'package:app_shopping_list/components/abre_tela_components/auth_button.dart';
 import 'package:flutter/material.dart';
 
 class AuthButtonsRow extends StatelessWidget {

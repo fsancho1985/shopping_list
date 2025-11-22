@@ -1,4 +1,5 @@
 import 'package:app_shopping_list/screens/abre_tela.dart';
+import 'package:app_shopping_list/screens/cadastro_tela.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MainApp extends StatelessWidget {
       initialRoute: '/abre',
       routes: {
         '/abre' : (context) => const AbreTela(),
+        '/cadastro' : (context) => const CadastroTela(),
       }
     );
   }

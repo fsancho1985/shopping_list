@@ -1,13 +1,13 @@
-import 'package:app_shopping_list/components/app_bar_title.dart';
+import 'package:app_shopping_list/components/abre_tela_components/app_bar_title.dart';
 import 'package:flutter/material.dart';
 
-import '../components/auth_buttons_row.dart';
-import '../components/feature_subtitle.dart';
-import '../components/feature_title.dart';
-import '../components/footer_section.dart';
-import '../components/logo_section.dart';
-import '../components/subtitle_section.dart';
-import '../components/title_section.dart';
+import '../components/abre_tela_components/auth_buttons_row.dart';
+import '../components/abre_tela_components/feature_subtitle.dart';
+import '../components/abre_tela_components/feature_title.dart';
+import '../components/abre_tela_components/footer_section.dart';
+import '../components/abre_tela_components/logo_section.dart';
+import '../components/abre_tela_components/subtitle_section.dart';
+import '../components/abre_tela_components/title_section.dart';
 
 class AbreTela extends StatelessWidget {
   const AbreTela({ super.key });
