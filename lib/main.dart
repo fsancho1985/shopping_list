@@ -4,6 +4,7 @@ import 'package:app_shopping_list/screens/compras_tela.dart';
 import 'package:app_shopping_list/screens/home_tela.dart';
 import 'package:app_shopping_list/screens/login_tela.dart';
 import 'package:app_shopping_list/screens/produtos_tela.dart';
+import 'package:app_shopping_list/screens/resumo_tela.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,6 +26,7 @@ class MainApp extends StatelessWidget {
         '/home' : (context) => const HomeTela(),
         '/compras' : (context) => const ComprasTela(),
         '/produtos' : (context) => const ProdutosTela(),
+        '/resumo' : (context) => const ResumoTela(),
       }
     );
   }

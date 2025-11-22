@@ -52,11 +52,11 @@ class CompraDao {
   Future<List<Compra>> getComprasPorLista(int listaId) async {
     final result = await db.rawQuery(
       '''
-        SELECT c.*, p.nomeroduto, p.unidade
+        SELECT c.*, p.nome_produto, p.unidade
         FROM compra c
         INNER JOIN produto p ON c.produto_id = p.id
         WHERE c.lista_id = ?
-        ORDER BY p.nomeproduto  
+        ORDER BY p.nome_produto  
       ''',
       [listaId],
     );
