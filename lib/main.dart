@@ -1,3 +1,10 @@
+import 'package:app_shopping_list/screens/abre_tela.dart';
+import 'package:app_shopping_list/screens/cadastro_tela.dart';
+import 'package:app_shopping_list/screens/compras_tela.dart';
+import 'package:app_shopping_list/screens/home_tela.dart';
+import 'package:app_shopping_list/screens/login_tela.dart';
+import 'package:app_shopping_list/screens/produtos_tela.dart';
+import 'package:app_shopping_list/screens/resumo_tela.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +16,18 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/abre',
+      routes: {
+        '/abre' : (context) => const AbreTela(),
+        '/cadastro' : (context) => const CadastroTela(),
+        '/login' : (context) => const LoginTela(),
+        '/home' : (context) => const HomeTela(),
+        '/compras' : (context) => const ComprasTela(),
+        '/produtos' : (context) => const ProdutosTela(),
+        '/resumo' : (context) => const ResumoTela(),
+      }
     );
   }
 }
